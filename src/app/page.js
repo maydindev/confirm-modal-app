@@ -4,12 +4,15 @@ export default function Home() {
   return (
     <div className="flex justify-center items-center bg-[#DE303F] w-full min-h-screen">
       <div className="flex flex-col border bg-white rounded-2xl m-10 p-10 shadow-2xl">
-        <h1 className="text-2xl font-extrabold text-center mb-7">Delete User</h1>
+        <h1 className="text-2xl font-extrabold text-center mb-7">
+          Delete User
+        </h1>
         <div className="border content-start mb-5">
-        <p className="text-xl">
-          Are you sure you want to delete{" "}
-          <span className="font-bold">your account</span><span> ?</span>
-        </p>
+          <p className="text-xl">
+            Are you sure you want to delete{" "}
+            <span className="font-bold">your account</span>
+            <span> ?</span>
+          </p>
         </div>
         <div className="bg-[#FFE9D9] flex border border-[]">
           <div className="bg-[#FA703F] w-2 h-20"></div>
@@ -28,7 +31,9 @@ export default function Home() {
                   fill="#771505"
                 />
               </svg>
-              <span className="text-[18px] text-[#771505] font-bold tracking-wide">Warning</span>
+              <span className="text-[18px] text-[#771505] font-bold tracking-wide">
+                Warning
+              </span>
             </div>
 
             <p className="text-[16px] text-[#771505]">
@@ -37,12 +42,14 @@ export default function Home() {
           </div>
         </div>
         <div className="flex items-center justify-between mt-5">
-          <button className="bg-black text-white font-bold text-xl p-3">No, Cancel</button>
-          <button className="bg-white text-black border border-black font-bold text-xl p-3">Yes, Delete</button>
+          <button className="bg-black text-white font-bold text-xl p-3">
+            No, Cancel
+          </button>
+          <button className="bg-white text-black border border-black font-bold text-xl p-3">
+            Yes, Delete
+          </button>
         </div>
-        
       </div>
-      
     </div>
   );
 }
