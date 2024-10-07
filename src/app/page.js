@@ -1,101 +1,48 @@
 import Image from "next/image";
-
+//w-[1200px] h-[800px]
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex justify-center items-center bg-[#DE303F] w-full min-h-screen">
+      <div className="flex flex-col border bg-white rounded-2xl m-10 p-10 shadow-2xl">
+        <h1 className="text-2xl font-extrabold text-center mb-7">Delete User</h1>
+        <div className="border content-start mb-5">
+        <p className="text-xl">
+          Are you sure you want to delete{" "}
+          <span className="font-bold">your account</span><span> ?</span>
+        </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="bg-[#FFE9D9] flex border border-[]">
+          <div className="bg-[#FA703F] w-2 h-20"></div>
+          <div className="flex flex-col m-3 border">
+            <div className="flex mb-1">
+              <svg
+                className="mr-3 text-[#771505]"
+                width="30"
+                height="27"
+                viewBox="0 0 30 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M29.8552 24.6415L15.9274 0.535684C15.7198 0.177445 15.3616 0 15 0C14.6384 0 14.2768 0.177445 14.0726 0.535684L0.144813 24.6415C-0.266994 25.3579 0.248602 26.2485 1.07222 26.2485H28.9278C29.7514 26.2485 30.267 25.3579 29.8552 24.6415ZM13.9286 9.91015C13.9286 9.76284 14.0492 9.64231 14.1965 9.64231H15.8035C15.9508 9.64231 16.0714 9.76284 16.0714 9.91015V16.0705C16.0714 16.2178 15.9508 16.3384 15.8035 16.3384H14.1965C14.0492 16.3384 13.9286 16.2178 13.9286 16.0705V9.91015ZM15 21.6952C14.5795 21.6866 14.179 21.5135 13.8847 21.2131C13.5903 20.9126 13.4254 20.5088 13.4254 20.0882C13.4254 19.6675 13.5903 19.2637 13.8847 18.9632C14.179 18.6628 14.5795 18.4897 15 18.4811C15.4205 18.4897 15.821 18.6628 16.1153 18.9632C16.4097 19.2637 16.5746 19.6675 16.5746 20.0882C16.5746 20.5088 16.4097 20.9126 16.1153 21.2131C15.821 21.5135 15.4205 21.6866 15 21.6952Z"
+                  fill="#771505"
+                />
+              </svg>
+              <span className="text-[18px] text-[#771505] font-bold tracking-wide">Warning</span>
+            </div>
+
+            <p className="text-[16px] text-[#771505]">
+              By Deleteing this account, you won’t be able to access the system.
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center justify-between mt-5">
+          <button className="bg-black text-white font-bold text-xl p-3">No, Cancel</button>
+          <button className="bg-white text-black border border-black font-bold text-xl p-3">Yes, Delete</button>
+        </div>
+        
+      </div>
+      
     </div>
   );
 }
